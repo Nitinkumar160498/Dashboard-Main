@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Account - Dashboard</title>
+    <link rel="stylesheet" href="scss/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="login-form">
+            <header class="logo-section">
+                <div class="logo">
+                    <img src="images/logo.svg" alt="company logo" class="logo-image">
+                </div>
+            </header>
+            
+            <form class="form" id="createAccountForm" novalidate>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">First Name <span class="required" aria-label="required">*</span></label>
+                        <input type="text" id="firstName" name="firstName" 
+                               aria-required="true" aria-describedby="firstName-error" 
+                               autocomplete="given-name" required />
+                        <div id="firstName-error" aria-live="polite"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name <span class="required" aria-label="required">*</span></label>
+                        <input type="text" id="lastName" name="lastName" 
+                               aria-required="true" aria-describedby="lastName-error" 
+                               autocomplete="family-name" required />
+                        <div id="lastName-error" aria-live="polite"></div>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email <span class="required" aria-label="required">*</span></label>
+                        <input type="email" id="email" name="email" 
+                               aria-required="true" aria-describedby="email-error" 
+                               autocomplete="email" required />
+                        <div id="email-error" aria-live="polite"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password <span class="required" aria-label="required">*</span></label>
+                        <input type="password" id="password" name="password" 
+                               aria-required="true" aria-describedby="password-error" 
+                               autocomplete="new-password" required />
+                        <div id="password-error" aria-live="polite"></div>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="countryCode">Country Code <span class="required" aria-label="required">*</span></label>
+                        <input type="text" id="countryCode" name="countryCode" 
+                               placeholder="+1" aria-required="true" aria-describedby="countryCode-error" 
+                               autocomplete="tel-country-code" required />
+                        <div id="countryCode-error" aria-live="polite"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="phoneNumber">Phone Number <span class="required" aria-label="required">*</span></label>
+                        <input type="tel" id="phoneNumber" name="phoneNumber" 
+                               placeholder="(555) 123-4567" aria-required="true" aria-describedby="phoneNumber-error" 
+                               autocomplete="tel" required />
+                        <div id="phoneNumber-error" aria-live="polite"></div>
+                    </div>
+                </div>
+                
+                <div class="checkbox-section">
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="terms" name="terms" 
+                               aria-required="true" aria-describedby="terms-error" required />
+                        <label for="terms">
+                            I agree to the <a href="#" class="terms-link">terms of logoipsum</a> and acknowledge that I can receive emails on product updates from logoipsum.
+                        </label>
+                        <div id="terms-error" aria-live="polite"></div>
+                    </div>
+                </div>
+                
+                <div class="button-section">
+                    <button type="submit" class="create-account-btn">Create My Account</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

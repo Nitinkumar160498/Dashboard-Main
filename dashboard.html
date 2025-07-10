@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="scss/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <a href="#" class="logo">
+                        <img src="images/logo.svg" alt="Logo" />
+                    </a>
+                </div>
+            </div>
+            <nav class="sidebar-menu">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+                                    <g id="Group_10196-2">
+                                        <path id="Path_4101"
+                                            d="M11.111,2.205l5.186,4.247c.696.57,1.098,1.42,1.098,2.317v6.011c0,1.657-1.349,3-3.012,3H4.012c-1.663,0-3.012-1.343-3.012-3v-6.011c.001-.898.407-1.748,1.104-2.317L7.285,2.205c1.112-.91,2.715-.91,3.826,0Z"
+                                            fill="none" stroke="currentColor" stroke-width="1.5"
+                                            stroke-linejoin="round" />
+                                        <path id="Path_4102"
+                                            d="M6.353,17.138v-2.667c-.03-1.564,1.22-2.856,2.79-2.886,1.571-.029,2.868,1.215,2.897,2.779,0,.035,0,.071,0,.106v2.667"
+                                            fill="none" stroke="currentColor" stroke-width="1.5"
+                                            stroke-linecap="round" />
+                                    </g>
+                                </svg>
+                            </span>
+                            <span class="menu-text">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="#">
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 18">
+                                    <g id="Group_101971">
+                                        <path id="Path_41031"
+                                            d="M11.065,1.522h1c1.657,0,3,1.343,3,3v9c0,1.657-1.343,3-3,3h-8c-1.657,0-3-1.343-3-3v-9c0-1.657,1.343-3,3-3h1"
+                                            fill="none" stroke="currentColor" stroke-width="1.5"
+                                            stroke-linecap="round" />
+                                        <path id="Path_41041"
+                                            d="M10.065,2.522h-4c-.552,0-1-.448-1-1s.448-1,1-1h4c.552,0,1,.448,1,1s-.448,1-1,1Z"
+                                            fill="none" stroke="currentColor" stroke-width="1.5"
+                                            stroke-linecap="round" />
+                                        <line id="Line_12021" x1="4.065" y1="6.522" x2="12.065" y2="6.522"
+                                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                        <line id="Line_12031" x1="4.065" y1="9.522" x2="10.065" y2="9.522"
+                                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                        <line id="Line_12041" x1="4.065" y1="12.522" x2="8.065" y2="12.522"
+                                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                    </g>
+                                </svg>
+                            </span>
+                            <span class="menu-text">Invoice</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+                                    <g id="Group_10199">
+                                        <rect id="Rectangle_4247" x="1.065" y="1.522" width="16" height="14" rx="3"
+                                            ry="3" fill="none" stroke="currentColor" stroke-width="1.5" />
+                                        <path id="Path_4105"
+                                            d="M6.565,13.022h0c-.828,0-1.5-.672-1.5-1.5v-6c0-.828.672-1.5,1.5-1.5s1.5.672,1.5,1.5v6c0,.828-.672,1.5-1.5,1.5Z"
+                                            fill="none" stroke="currentColor" stroke-width="1.5" />
+                                        <path id="Path_4106"
+                                            d="M12.565,13.022h0c-.828,0-1.5-.672-1.5-1.5v-3c0-.828.672-1.5,1.5-1.5s1.5.672,1.5,1.5v3c0,.828-.672,1.5-1.5,1.5Z"
+                                            fill="none" stroke="currentColor" stroke-width="1.5" />
+                                    </g>
+                                </svg>
+                            </span>
+                            <span class="menu-text">Sales</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+                                    <g id="Group_10201">
+                                        <path id="Path_4107"
+                                            d="M8.065,2.062c-4.254.402-7.377,4.176-6.975,8.43.402,4.254,4.176,7.377,8.43,6.975,3.518-.332,6.363-3.005,6.914-6.495"
+                                            fill="none" stroke="currentColor" stroke-width="1.5" />
+                                        <path id="Path_4108"
+                                            d="M10.565,2.07v-1.539l.006-.009c3.968-.125,7.289,2.983,7.429,6.95h-7.435v-5.402Z"
+                                            fill="currentColor" />
+                                    </g>
+                                </svg>
+                            </span>
+                            <span class="menu-text">Usage</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+                                    <g id="Group_10203">
+                                        <path id="Path_4109"
+                                            d="M17.475,5.712c1.552,3.541-.06,7.669-3.601,9.221-.886.388-1.842.589-2.809.589H3.065c-1.103-.003-1.997-.897-2-2v-5c0-3.866,3.134-7,7-7h3c.044-.002.087.002.13.01"
+                                            fill="none" stroke="currentColor" stroke-width="1.5" />
+                                        <line id="Line_1205" x1="5.565" y1="7.522" x2="9.565" y2="7.522"
+                                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                        <line id="Line_1206" x1="5.565" y1="10.522" x2="13.565" y2="10.522"
+                                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                        <circle id="Ellipse_466" cx="15.065" cy="2.522" r="2" fill="none"
+                                            stroke="currentColor" stroke-width="1.5" />
+                                    </g>
+                                </svg>
+                            </span>
+                            <span class="menu-text">Chat</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+                                    <g id="Group_10205">
+                                        <path id="Path_4110"
+                                            d="M13.065,6.522h2c1.105,0,2,.895,2,2v6c0,1.105-.895,2-2,2s-2-.895-2-2v-12c0-1.105-.895-2-2-2H3.065c-1.105,0-2,.895-2,2v12c0,1.105.895,2,2,2h11.53"
+                                            fill="none" stroke="currentColor" stroke-width="1.5" />
+                                        <line id="Line_1208" x1="3.565" y1="8.522" x2="10.565" y2="8.522"
+                                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                        <line id="Line_1209" x1="3.565" y1="12.522" x2="6.565" y2="12.522"
+                                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                    </g>
+                                </svg>
+                            </span>
+                            <span class="menu-text">History</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <div class="main-content">
+            <div class="mobile-header">
+                <div class="logo">
+                    <a href="#" class="logo">
+                        <img src="images/logo.svg" alt="Logo" />
+                    </a>
+                </div>
+                <button class="hamburger-menu" id="hamburgerMenu">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+            </div>
+
+            <header class="header">
+                <div class="header-left">
+                    <h1 class="page-title">Invoice</h1>
+                </div>
+                <div class="header-right">
+                    <div class="search-bar">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 20">
+                            <g id="Group_27">
+                                <path id="Path_60"
+                                    d="M6.183,1.767c3.53,0,6.392,2.862,6.392,6.392s-2.862,6.392-6.392,6.392-6.392-2.862-6.392-6.392,2.862-6.392,6.392-6.392h0Z"
+                                    fill="none" stroke="currentColor" stroke-width="1.5" />
+                                <line id="Line_911" x1="11.093" y1="12.778" x2="15.547" y2="17.232"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                            </g>
+                        </svg>
+                        <input type="text" id="search" name="search" placeholder="Search" class="custom-search"
+                            aria-label="Search" />
+                    </div>
+                    <div class="search-separator"></div>
+                    <div class="theme-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 24">
+                            <g id="Group_10219">
+                                <g id="Group_1888">
+                                    <path id="Path_2428"
+                                        d="M18.326,14.605c-5.407.004-9.794-4.376-9.799-9.783-.001-1.576.378-3.13,1.106-4.528-5.308,1.059-8.752,6.22-7.694,11.528,1.059,5.308,6.22,8.752,11.528,7.694,2.919-.582,5.414-2.459,6.784-5.101-.634.127-1.279.191-1.925.191Z"
+                                        fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </g>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="separator"></div>
+                    <div class="notifications">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 24">
+                            <path id="Path_4567"
+                                d="M17.5,19h-3.5c0,1.657-1.343,3-3,3s-3-1.343-3-3h-3.5c-1.933,0-3.5-1.567-3.5-3.5s1.567-3.5,3.5-3.5h1.5v2h-1.5c-.828,0-1.5.672-1.5,1.5s.672,1.5,1.5,1.5h13c.828,0,1.5-.672,1.5-1.5s-.672-1.5-1.5-1.5h-1.5v-2h1.5c1.933,0,3.5,1.567,3.5,3.5s-1.567,3.5-3.5,3.5ZM11,18c-.552,0-1,.448-1,1s.448,1,1,1,1-.448,1-1-.448-1-1-1ZM16,11h0v-2c0-2.761-2.239-5-5-5s-5,2.239-5,5v3h-2v-3c.003-2.736,1.603-5.219,4.094-6.352-.063-.21-.094-.429-.094-.648,0-1.657,1.343-3,3-3s3,1.343,3,3c-.002.22-.035.438-.1.648,2.493,1.132,4.095,3.614,4.1,6.352v3h-2v-1ZM11,3c-.552,0-1,.448-1,1s.448,1,1,1,1-.448,1-1-.448-1-1-1Z"
+                                fill="currentColor" />
+                        </svg>
+                    </div>
+                    <div class="separator"></div>
+                    <div class="user-avatar">S</div>
+                </div>
+            </header>
+
+            <div class="dashboard-content">
+                <div class="stats-grid">
+                    <div class="stats-card">
+                        <div class="card-content">
+                            <div class="card-number">34.554K</div>
+                            <div class="card-label">Total Views</div>
+                        </div>
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" class="st40">
+                                <g id="Group_10331">
+                                    <g id="Group_10330" class="st38">
+                                        <g id="Group_10329">
+                                            <g class="st29">
+                                                <g id="Group_10328">
+                                                    <path id="Path_4570" class="st34"
+                                                        d="M182.114,12.156v31.913c0,4.665-3.782,8.447-8.447,8.448h-39.423c-.58-.001-1.159-.061-1.727-.177-.098-.561-.148-1.13-.15-1.7v-31.914c.002-5.183,4.203-9.384,9.386-9.386h39.873c.325.903.49,1.856.488,2.816" />
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                    <line id="Line_1300" class="st4" x1="125.75" y1="15.271" x2="181.75" y2="15.271" />
+                                    <path id="Path_4571" class="st37"
+                                        d="M170.85,9.34c0,1.037-.84,1.877-1.877,1.877s-1.877-.84-1.877-1.877.84-1.877,1.877-1.877c1.037,0,1.877.84,1.877,1.877" />
+                                    <path id="Path_4572" class="st37"
+                                        d="M176.482,9.34c0,1.037-.84,1.877-1.877,1.877s-1.877-.84-1.877-1.877.84-1.877,1.877-1.877c1.037,0,1.877.84,1.877,1.877" />
+                                    <rect id="Rectangle_4298" class="st4" x="125.75" y="3.271" width="55" height="49"
+                                        rx="9" ry="9" />
+                                    <path id="Path_4573" class="st37"
+                                        d="M185.868,43.131c0,7.258-5.883,13.141-13.141,13.141-7.258,0-13.141-5.883-13.141-13.141,0-7.258,5.883-13.141,13.141-13.141h.001c7.257,0,13.14,5.884,13.14,13.141" />
+                                </g>
+                                <g xmlns="http://www.w3.org/2000/svg" id="Group_10333">
+                                    <path id="Path_4574" class="st27"
+                                        d="M172.727,34.74c1.972,0,3.571,1.599,3.571,3.571,0,1.972-1.599,3.571-3.571,3.571-1.972,0-3.571-1.599-3.571-3.571h0c0-1.972,1.599-3.571,3.571-3.571" />
+                                    <path id="Path_4575" class="st27"
+                                        d="M172.728,43.575c4.147,0,7.509,1.59,7.509,3.552s-3.362,3.553-7.509,3.553-7.509-1.592-7.509-3.553,3.362-3.552,7.509-3.552" />
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="stats-card">
+                        <div class="card-content">
+                            <div class="card-number">34.554K</div>
+                            <div class="card-label">Total Profit</div>
+                        </div>
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" class="st35">
+                                <g id="Group_10340">
+                                    <g id="Group_10339" class="st38">
+                                        <g id="Group_10338">
+                                            <g class="st33">
+                                                <g id="Group_10337">
+                                                    <path id="Path_4576" class="st30"
+                                                        d="M181.534,15.156v26.284c-.002,4.664-3.783,8.444-8.447,8.445h-27.221v5.632l-9.574-5.632h-1.689c-.96.002-1.913-.163-2.816-.488v-27.671c.002-5.183,4.203-9.384,9.386-9.386h39.873c.162.439.284.891.366,1.352v.038c.031.161.053.324.066.488.008.024.011.05.009.075l.028.282c.009.188.019.385.019.582" />
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                    <path id="Path_4577" class="st12"
+                                        d="M181.046,12.341c.162.439.284.891.366,1.352v.038c.031.161.053.324.066.488.008.024.011.05.009.075l.028.282c.009.188.019.385.019.582v26.28c0,4.666-3.782,8.448-8.448,8.448h-27.219v5.632l-9.574-5.632h-1.689c-.96.002-1.913-.163-2.816-.488-3.377-1.188-5.635-4.38-5.632-7.96v-26.281c0-4.666,3.782-8.448,8.448-8.448h38.483c3.58-.003,6.771,2.255,7.959,5.632" />
+                                    <path id="Path_4578" class="st30"
+                                        d="M186.227,46.131c0,7.258-5.883,13.141-13.141,13.141-7.258,0-13.141-5.883-13.141-13.141,0-7.258,5.883-13.141,13.141-13.141h.001c7.257,0,13.14,5.884,13.14,13.141" />
+                                </g>
+                                <g id="Group_10342">
+                                    <path id="Path_4579" class="st30"
+                                        d="M142.729,24.327c0,2.193-1.776,3.97-3.969,3.971-2.193,0-3.97-1.776-3.971-3.969,0-2.193,1.776-3.97,3.969-3.971h.002c2.192,0,3.968,1.777,3.969,3.969" />
+                                    <path id="Path_4580" class="st30"
+                                        d="M157.815,24.327c0,2.193-1.776,3.97-3.969,3.971-2.193,0-3.97-1.776-3.971-3.969,0-2.193,1.776-3.97,3.969-3.971h.002c2.192,0,3.968,1.777,3.969,3.969" />
+                                    <path id="Path_4581" class="st30"
+                                        d="M172.901,24.327c0,2.193-1.776,3.97-3.969,3.971-2.193,0-3.97-1.776-3.971-3.969,0-2.193,1.776-3.97,3.969-3.971h.002c2.192,0,3.968,1.777,3.969,3.969" />
+                                    <path id="Path_4582" class="st27"
+                                        d="M176.841,51.763h-9.511c-1.002-.036-1.785-.875-1.752-1.877v-6.57c-.034-1.002.75-1.842,1.752-1.878h9.636c1.002.036,1.785.875,1.752,1.877v6.57c.033,1.002-.75,1.841-1.752,1.877" />
+                                    <path id="Path_4583" class="st27"
+                                        d="M178.718,44.723l1.918-.922c.833-.33,1.837.123,1.837.83v3.839c0,.708-1,1.161-1.837.83l-1.918-.823" />
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="stats-card">
+                        <div class="card-content">
+                            <div class="card-number">34.554K</div>
+                            <div class="card-label">Total Products</div>
+                        </div>
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" class="st40">
+                                <g id="Group_10349">
+                                    <path id="Path_4584" class="st14"
+                                        d="M129.158,10.524l24.795,15.067c1.471.894,3.322.87,4.77-.06l23.811-15.27" />
+                                    <rect id="Rectangle_4306" class="st14" x="128.126" y="8.895" width="56" height="40"
+                                        rx="4" ry="4" />
+                                    <g id="Group_10348" class="st38">
+                                        <g id="Group_10347">
+                                            <g class="st24">
+                                                <g id="Group_10346">
+                                                    <path id="Path_4585" class="st18"
+                                                        d="M184.146,14.982v-1.079h-45.993c-2.072.003-3.751,1.682-3.754,3.754v30.975h45.992c2.073,0,3.753-1.679,3.754-3.752v-29.898h0Z" />
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                    <path id="Path_4586" class="st20"
+                                        d="M188.839,44.291c0,7.258-5.883,13.141-13.141,13.141-7.258,0-13.141-5.883-13.141-13.141,0-7.258,5.883-13.141,13.141-13.141h.001c7.257,0,13.14,5.884,13.14,13.141" />
+                                    <path id="Path_4587" class="st27"
+                                        d="M181.921,39.537l-4.186,11.967c-.195.547-.797.833-1.344.638-.271-.097-.491-.3-.608-.563l-1.8-4.055,2.544-3.923-4.111,2.45-3.879-1.718c-.53-.242-.763-.867-.522-1.396.118-.26.337-.46.606-.556l11.967-4.177c.545-.191,1.142.096,1.333.641.078.224.078.468,0,.692" />
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="stats-card">
+                        <div class="card-content">
+                            <div class="card-number">34.554K</div>
+                            <div class="card-label">Total Users</div>
+                        </div>
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" class="st40">
+                                <g id="Group_10357">
+                                    <g class="st31">
+                                        <g id="Group_10356">
+                                            <g id="Group_10355" class="st38">
+                                                <g id="Group_10354">
+                                                    <g class="st21">
+                                                        <g id="Group_10353">
+                                                            <path id="Path_4588" class="st41"
+                                                                d="M184.926,30.735c0,13.547-10.979,24.53-24.526,24.536-2.129.004-4.25-.273-6.306-.826-11.534-7.113-15.118-22.229-8.005-33.763,4.468-7.244,12.371-11.656,20.882-11.657,2.114-.003,4.219.272,6.261.817,7.265,4.459,11.694,12.37,11.7,20.894" />
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                                <path id="Path_4589" class="st1" d="M159.76,16.099v14.947l6.31,10.176" />
+                                <g id="Group_10358">
+                                    <path id="Path_4590" class="st1"
+                                        d="M184.923,30.736c0,13.546-10.977,24.529-24.523,24.536-4.04-.003-8.018-.999-11.583-2.9-11.943-6.394-16.442-21.259-10.048-33.202,6.394-11.943,21.259-16.442,33.202-10.048,7.971,4.267,12.948,12.573,12.952,21.614Z" />
+                                    <line id="Line_1301" class="st1" x1="159.762" y1="6.641" x2="159.762" y2="9.457" />
+                                    <path id="Path_4591" class="st41"
+                                        d="M186.042,45.124c0,7.258-5.882,13.141-13.14,13.142-7.258,0-13.141-5.882-13.142-13.14,0-7.258,5.882-13.141,13.14-13.142h.002c7.257,0,13.139,5.883,13.14,13.14" />
+                                    <line id="Line_1302" class="st1" x1="159.762" y1="51.695" x2="159.762"
+                                        y2="54.511" />
+                                    <line id="Line_1303" class="st1" x1="184.166" y1="31.046" x2="181.35" y2="31.046" />
+                                    <line id="Line_1304" class="st1" x1="139.112" y1="31.046" x2="136.296"
+                                        y2="31.046" />
+                                    <line id="Line_1305" class="st1" x1="132.542" y1="37.616" x2="129.726"
+                                        y2="37.616" />
+                                    <line id="Line_1306" class="st1" x1="134.497" y1="43.248" x2="125.688"
+                                        y2="43.248" />
+                                    <line id="Line_1307" class="st1" x1="139.075" y1="48.879" x2="131.603"
+                                        y2="48.879" />
+                                    <path id="Path_4592" class="st27"
+                                        d="M175.333,43.198v-3.024c0-1.172-.95-2.122-2.122-2.122h-.083l-2.938,6.364v7.78h8.289c.713.021,1.336-.478,1.469-1.179l1.014-6.229c.103-.766-.435-1.471-1.202-1.573-.01-.001-.019-.002-.029-.004-.078-.011-.158-.017-.237-.016l-4.161.003Z" />
+                                    <path id="Path_4593" class="st27"
+                                        d="M169.547,52.197h-1.929c-.74-.036-1.313-.66-1.286-1.4v-4.912c-.027-.74.546-1.364,1.286-1.4h1.929v7.712Z" />
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="stats-card">
+                        <div class="card-content">
+                            <div class="card-number">34.554K</div>
+                            <div class="card-label">Total Revenue</div>
+                        </div>
+                        <div class="card-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 80" class="st40">
+                                <g id="Group_10370">
+                                    <path id="Path_4594" class="st39"
+                                        d="M191.035,54.859c0,7.258-5.883,13.141-13.141,13.141-7.258,0-13.141-5.883-13.141-13.141,0-7.258,5.883-13.141,13.141-13.141h.001c7.257,0,13.14,5.884,13.14,13.141" />
+                                    <path id="Path_4595" class="st16"
+                                        d="M187.282,23.886v28.158c0,4.666-3.782,8.448-8.448,8.448h-39.421c-.235,0-.46-.009-.685-.028-4.385-.357-7.762-4.02-7.763-8.42v-28.158c0-4.666,3.782-8.448,8.448-8.448h39.422c4.664.004,8.444,3.784,8.448,8.448h0Z" />
+                                    <g id="Group_10369" class="st28">
+                                        <g id="Group_10368">
+                                            <g class="st26">
+                                                <g id="Group_10367">
+                                                    <path id="Path_4596" class="st39"
+                                                        d="M187.28,23.885v28.158c0,4.666-3.782,8.448-8.448,8.448h-39.421c-.235,0-.46-.009-.685-.028-1.375-1.542-2.134-3.537-2.131-5.604v-28.158c0-4.666,3.782-8.448,8.448-8.448h39.422c.235,0,.46.009.685.028,1.375,1.541,2.133,3.535,2.131,5.6" />
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                    <rect id="Rectangle_4315" class="st16" x="154.035" y="60" width="10" height="7" />
+                                    <line id="Line_1308" class="st8" x1="150.035" y1="67" x2="168.035" y2="67" />
+                                    <path id="Path_4597" class="st39"
+                                        d="M146.581,44.234c0,1.72-1.395,3.115-3.115,3.115s-3.115-1.395-3.115-3.115c0-1.72,1.395-3.115,3.115-3.115h0c1.72,0,3.115,1.395,3.115,3.115" />
+                                    <path id="Path_4598" class="st39"
+                                        d="M159.043,31.773c0,1.72-1.395,3.115-3.115,3.115s-3.115-1.395-3.115-3.115,1.395-3.115,3.115-3.115h0c1.72,0,3.115,1.395,3.115,3.115" />
+                                    <path id="Path_4599" class="st39"
+                                        d="M166.832,40.341c0,1.72-1.395,3.115-3.115,3.115s-3.115-1.395-3.115-3.115,1.395-3.115,3.115-3.115,3.115,1.395,3.115,3.115h0" />
+                                    <path id="Path_4600" class="st39"
+                                        d="M176.956,30.216c0,1.72-1.395,3.115-3.115,3.115s-3.115-1.395-3.115-3.115,1.395-3.115,3.115-3.115,3.115,1.395,3.115,3.115h0" />
+                                    <path id="Path_4601" class="st16"
+                                        d="M143.465,44.235l12.462-12.464,8.134,8.568,10.213-10.123" />
+                                    <line id="Line_1309" class="st9" x1="180.446" y1="57.53" x2="182.673" y2="59.537" />
+                                    <path id="Path_4602" class="st27"
+                                        d="M176.815,47.682c-3.247-.002-5.882,2.629-5.884,5.876s2.629,5.882,5.876,5.884c3.247.002,5.881-2.628,5.884-5.875v-.009c.002-3.244-2.626-5.874-5.87-5.876h-.006" />
+                                    <path id="Path_4603" class="st39"
+                                        d="M180.537,52.951c0-1.776-1.439-3.217-3.215-3.218-.249,0-.498.028-.74.086-.104.024-.179.115-.181.222-.003.107.067.202.169.232.764.224,1.454.648,2,1.227.704.821,1.132,1.843,1.222,2.921.011.129.124.225.254.215.1-.008.184-.079.208-.177l.225-.892v-.015c.037-.198.056-.399.056-.6" />
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bill-info-section">
+                    <div class="data-table full-table bill-info-table">
+                        <h2 class="section-title">Bill Information</h2>
+
+                        <div class="table-body">
+                            <div class="table-header">
+                                <div class="header-cell">
+                                    <input type="checkbox" id="selectAll" />
+                                    <label for="selectAll">Client Name</label>
+                                </div>
+                                <div class="header-cell">Related To</div>
+                                <div class="header-cell">Close Date</div>
+                                <div class="header-cell">Contact Name</div>
+                                <div class="header-cell">Priority</div>
+                                <div class="header-cell">Status</div>
+                            </div>
+
+                            <div class="table-row">
+                                <div class="checkbox-cell">
+                                    <input type="checkbox" id="row1" />
+                                    <div class="client-info">
+                                        <div class="avatar purple">K</div>
+                                        <span>Kris Marrier</span>
+                                    </div>
+                                </div>
+                                <div class="table-cell">Commercial Press</div>
+                                <div class="table-cell">Jun 29, 2022</div>
+                                <div class="table-cell">Kris Marrier</div>
+                                <div class="table-cell">Normal</div>
+                                <div class="table-cell">
+                                    <span class="status-badge open">Open</span>
+                                </div>
+                            </div>
+
+                            <div class="table-row">
+                                <div class="checkbox-cell">
+                                    <input type="checkbox" id="row2" checked />
+                                    <div class="client-info">
+                                        <div class="avatar pink">C</div>
+                                        <span>Capla Paprocki</span>
+                                    </div>
+                                </div>
+                                <div class="table-cell">Feltz printing service</div>
+                                <div class="table-cell">July 5, 2022</div>
+                                <div class="table-cell">Capla Paprocki</div>
+                                <div class="table-cell">High</div>
+                                <div class="table-cell">
+                                    <span class="status-badge completed">Completed</span>
+                                </div>
+                            </div>
+
+                            <div class="table-row">
+                                <div class="checkbox-cell">
+                                    <input type="checkbox" id="row3" />
+                                    <div class="client-info">
+                                        <div class="avatar orange">J</div>
+                                        <span>John</span>
+                                    </div>
+                                </div>
+                                <div class="table-cell">King</div>
+                                <div class="table-cell">July 1, 2022</div>
+                                <div class="table-cell">John</div>
+                                <div class="table-cell">High</div>
+                                <div class="table-cell">
+                                    <span class="status-badge not-started">Not Started</span>
+                                </div>
+                            </div>
+
+                            <div class="table-row">
+                                <div class="checkbox-cell">
+                                    <input type="checkbox" id="row4" />
+                                    <div class="client-info">
+                                        <div class="avatar purple">K</div>
+                                        <span>Kris Marrier</span>
+                                    </div>
+                                </div>
+                                <div class="table-cell">Commercial Press</div>
+                                <div class="table-cell">Jun 29, 2022</div>
+                                <div class="table-cell">Kris Marrier</div>
+                                <div class="table-cell">Normal</div>
+                                <div class="table-cell">
+                                    <span class="status-badge started">Started</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dual-section">
+                    <div class="invoice-section">
+                        <div class="data-table compact-table">
+                            <h2 class="section-title">Invoice</h2>
+
+                            <div class="table-body">
+                                <div class="table-header">
+                                    <div class="header-cell">
+                                        <input type="checkbox" id="selectAllInvoice" />
+                                        <label for="selectAllInvoice">Invoice Number</label>
+                                    </div>
+                                    <div class="header-cell">Related To</div>
+                                    <div class="header-cell">Close Date</div>
+                                </div>
+
+                                <div class="table-row">
+                                    <div class="checkbox-cell">
+                                        <input type="checkbox" id="invoice1" />
+                                        <span class="invoice-number">10204</span>
+                                    </div>
+                                    <div class="table-cell">Commercial Press</div>
+                                    <div class="table-cell">Jun 29, 2022</div>
+                                </div>
+
+                                <div class="table-row">
+                                    <div class="checkbox-cell">
+                                        <input type="checkbox" id="invoice2" checked />
+                                        <span class="invoice-number">12945</span>
+                                    </div>
+                                    <div class="table-cell">Feltz printing service</div>
+                                    <div class="table-cell">July 5, 2022</div>
+                                </div>
+
+                                <div class="table-row">
+                                    <div class="checkbox-cell">
+                                        <input type="checkbox" id="invoice3" />
+                                        <span class="invoice-number">12356</span>
+                                    </div>
+                                    <div class="table-cell">King</div>
+                                    <div class="table-cell">July 1, 2022</div>
+                                </div>
+
+                                <div class="table-row">
+                                    <div class="checkbox-cell">
+                                        <input type="checkbox" id="invoice4" />
+                                        <span class="invoice-number">19853</span>
+                                    </div>
+                                    <div class="table-cell">Commercial Press</div>
+                                    <div class="table-cell">Jun 29, 2022</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="recent-activity-section">
+                        <div class="data-table compact-table">
+                            <h2 class="section-title">Recent Activity</h2>
+
+                            <div class="table-body">
+                                <div class="table-header">
+                                    <div class="header-cell">
+                                        <input type="checkbox" id="selectAllActivity" />
+                                        <label for="selectAllActivity">Client Name</label>
+                                    </div>
+                                    <div class="header-cell">Related To</div>
+                                    <div class="header-cell">Close Date</div>
+                                </div>
+
+                                <div class="table-row">
+                                    <div class="checkbox-cell">
+                                        <input type="checkbox" id="activity1" />
+                                        <div class="client-info">
+                                            <div class="avatar purple">K</div>
+                                            <span>Kris Marrier</span>
+                                        </div>
+                                    </div>
+                                    <div class="table-cell">Commercial Press</div>
+                                    <div class="table-cell">Jun 29, 2022</div>
+                                </div>
+
+                                <div class="table-row">
+                                    <div class="checkbox-cell">
+                                        <input type="checkbox" id="activity2" checked />
+                                        <div class="client-info">
+                                            <div class="avatar pink">C</div>
+                                            <span>Capla Paprocki</span>
+                                        </div>
+                                    </div>
+                                    <div class="table-cell">Feltz printing service</div>
+                                    <div class="table-cell">July 5, 2022</div>
+                                </div>
+
+                                <div class="table-row">
+                                    <div class="checkbox-cell">
+                                        <input type="checkbox" id="activity3" />
+                                        <div class="client-info">
+                                            <div class="avatar orange">J</div>
+                                            <span>John</span>
+                                        </div>
+                                    </div>
+                                    <div class="table-cell">King</div>
+                                    <div class="table-cell">July 1, 2022</div>
+                                </div>
+
+                                <div class="table-row">
+                                    <div class="checkbox-cell">
+                                        <input type="checkbox" id="activity4" />
+                                        <div class="client-info">
+                                            <div class="avatar purple">K</div>
+                                            <span>Kris Marrier</span>
+                                        </div>
+                                    </div>
+                                    <div class="table-cell">Commercial Press</div>
+                                    <div class="table-cell">Jun 29, 2022</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

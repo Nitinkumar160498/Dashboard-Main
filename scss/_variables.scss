@@ -1,0 +1,112 @@
+// Base colors
+$white: #ffffff;
+$gray-light: #f8f9fa;
+$gray-border: #e5e7eb;
+$gray-border-light: #f1f5f9;
+$gray-border-medium: #E3ECF5;
+$gray-text-light: #6b7280;
+$gray-text-medium: #5F5F5F;
+$gray-text-dark: #3F4D5E;
+$dark-text: #333333;
+$darker-text: #1f2937;
+$darkest-text: #090606;
+$muted-text: #828282;
+
+// Common variables
+$text-color: #333;
+
+// Dashboard specific colors
+$dashboard-primary: #007DFC;
+$dashboard-primary-light: rgba(0, 125, 252, 0.04);
+
+// Component specific colors
+$search-border: #C9D1D9;
+$separator-border: #C7CFE0;
+$separator-opacity: 0.17;
+$hamburger-color: #374151;
+$icon-color: #555B6D;
+
+// Component dimensions
+$sidebar-width: 280px;
+$header-height: 79px;
+
+// Font sizes
+$font-size-xs: 13px;
+$font-size-sm: 15px;
+$font-size-base: 16px;
+$font-size-lg: 18px;
+$font-size-xl: 24px;
+$font-size-xxl: 30px;
+
+// Spacing/Padding/Margin
+$spacing-xs: 4px;
+$spacing-sm: 6px;
+$spacing-md: 8px;
+$spacing-lg: 10px;
+$spacing-xl: 12px;
+$spacing-xxl: 16px;
+$spacing-2xl: 18px;
+$spacing-3xl: 20px;
+$spacing-4xl: 22px;
+$spacing-5xl: 24px;
+$spacing-6xl: 28px;
+$spacing-7xl: 35px;
+$spacing-8xl: 48px;
+$spacing-9xl: 55px;
+$spacing-10xl: 65px;
+$spacing-11xl: 70px;
+
+// Border radius
+$border-radius-sm: 4px;
+$border-radius-md: 6px;
+$border-radius-lg: 10px;
+$border-radius-circle: 50%;
+
+// Icon sizes
+$icon-sm: 16px;
+$icon-md: 22px;
+$icon-lg: 24px;
+$icon-xl: 32px;
+$icon-card: 50px;
+$icon-card-mobile: 40px;
+
+// Avatar colors
+$avatar-primary: #43B1D4;
+$avatar-purple: #B2A9DC;
+$avatar-pink: #DF889D;
+$avatar-orange: #F2B170;
+
+// Status badge colors
+$status-open-bg: rgba(255, 242, 236, 1);
+$status-open-text: #FF814F;
+$status-completed-bg: rgba(153, 105, 197, 0.1);
+$status-completed-text: #9969C5;
+$status-not-started-bg: rgba(229, 142, 28, 0.1);
+$status-not-started-text: #E58E1C;
+$status-started-bg: rgba(71, 147, 197, 0.1);
+$status-started-text: #3b82f6;
+
+// Effects
+$card-shadow: 0px 4px 12px rgba(159, 172, 198, 0.1607843137);
+$overlay-bg: rgba(0, 0, 0, 0.5);
+
+// Dashboard overlay variables
+$menu-text: #333333;
+$card-text: #090606;
+$card-label: #828282;
+$table-header-text: #3F4D5E;
+$table-cell-text: #6b7280;
+$client-text: #5F5F5F;
+$hamburger-color: #374151;
+$icon-color: #555B6D;
+$notification-color: #6b7280;
+
+// Create Account specific colors
+$create-account-primary: #0071BC;
+$create-account-primary-hover: #1976D2;
+$create-account-focus: #1E88E5;
+$create-account-error: #FF5722;
+$create-account-input-border: #D7DBDF;
+
+// Additional font sizes
+$font-size-required: 7px;

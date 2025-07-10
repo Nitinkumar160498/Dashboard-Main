@@ -1,0 +1,198 @@
+
+.login-container {
+  *:focus {
+    outline: 2px solid $create-account-focus;
+    outline-offset: 2px;
+  }
+
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: $spacing-5xl;
+  background-color: $gray-light;
+
+  @media (max-width: 768px) {
+    padding: $spacing-xxl;
+  }
+}
+
+.login-form {
+  background: $white;
+  border: 1px solid $gray-border-medium;
+  border-radius: $border-radius-lg;
+  padding: $spacing-9xl $spacing-11xl;
+  width: 100%;
+  max-width: 850px;
+
+  @media (max-width: 768px) {
+    padding: $spacing-5xl;
+    max-width: none;
+  }
+}
+
+.logo-section {
+  text-align: center;
+  margin-bottom: $spacing-8xl;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: $spacing-md;
+  
+  .logo-image {
+    width: 195px;
+    height: 39px;
+    object-fit: contain;
+    flex-shrink: 0;
+  }
+}
+
+.form {
+  .form-row {
+    display: flex;
+    gap: $spacing-5xl;
+    margin-bottom: $spacing-5xl;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+    
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: $spacing-xxl;
+    }
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    
+    label {
+      font-size: $font-size-base;
+      color: $gray-text-medium;
+      margin-bottom: $spacing-sm;
+      
+      .required {
+        color: $create-account-error;
+      }
+    }
+    
+    input {
+      height: 45px;
+      padding: $spacing-xl $spacing-xxl;
+      border: 1px solid $create-account-input-border;
+      border-radius: $border-radius-sm;
+      font-size: $font-size-sm;
+      font-weight: 400;
+      color: $text-color;
+      background-color: $white;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+      
+      &:focus {
+        border-color: $create-account-focus;
+        box-shadow: 0 0 0 3px rgba(30, 136, 229, 0.1);
+        outline: 2px solid $create-account-focus;
+        outline-offset: 2px;
+      }
+      
+      &::placeholder {
+        color: $gray-text-light;
+      }
+      
+      &.error {
+        border-color: $create-account-error;
+        
+        &:focus {
+          border-color: $create-account-error;
+          box-shadow: 0 0 0 3px rgba(255, 87, 34, 0.1);
+        }
+      }
+    }
+  }
+}
+
+.error-message {
+  color: $create-account-error;
+  font-size: $font-size-xs;
+  margin-top: $spacing-xs;
+  font-weight: 400;
+}
+
+.checkbox-section {
+  margin-top: $spacing-7xl;
+  
+  .checkbox-group {
+    display: flex;
+    align-items: flex-start;
+    gap: $spacing-md;
+    
+    input[type="checkbox"] {
+      width: $spacing-xxl;
+      height: $spacing-xxl;
+      margin-top: 2px;
+      flex-shrink: 0;
+      cursor: pointer;
+      accent-color: $create-account-focus;
+
+      &:focus {
+        outline: 2px solid $create-account-focus;
+        outline-offset: 2px;
+      }
+    }
+    
+    label {
+      font-size: $font-size-sm;
+      font-weight: 400;
+      color: $gray-text-dark;
+      line-height: 1.5;
+      cursor: pointer;
+      margin-bottom: 0;
+      
+      .terms-link {
+        color: $create-account-focus;
+        text-decoration: none;
+        
+        &:hover {
+          text-decoration: underline;
+        }
+
+        &:focus {
+          outline: 2px solid $create-account-focus;
+          outline-offset: 2px;
+        }
+      }
+    }
+  }
+}
+
+.button-section {
+  margin-top: $spacing-10xl;
+  
+  .create-account-btn {
+    background-color: $create-account-primary;
+    color: $white;
+    border: none;
+    border-radius: $border-radius-sm;
+    padding: $spacing-xl $spacing-5xl;
+    font-size: $font-size-base;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    
+    &:hover {
+      background-color: $create-account-primary-hover;
+    }
+    
+    &:active {
+      transform: translateY(1px);
+    }
+    
+    &:focus {
+      outline: 2px solid $create-account-focus;
+      outline-offset: 2px;
+      box-shadow: 0 0 0 3px rgba(30, 136, 229, 0.3);
+    }
+  }
+}
